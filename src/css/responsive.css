@@ -1,0 +1,31 @@
+@media (max-width: 808px) {
+    main {
+        flex-direction: column;
+        gap: 50px;
+        margin-block: 5%;
+    }
+    .texts {
+        text-align: center;
+    }
+    .texts h1 {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 588px) {
+    .btn-form {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 485px) {
+    .btn-form, .texts {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 366px) {
+    .btn-form, .texts {
+        max-width: 300px;
+    }
+}
