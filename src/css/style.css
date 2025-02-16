@@ -1,0 +1,119 @@
+body {
+    font-family: "Poppins";
+    background: url(../images/bg-intro-desktop.png) repeat 0 0/cover hsl(0, 100%, 74%);
+}
+
+main {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 3%;
+    gap: 5%;
+}
+
+.texts, button {
+    color: #fff;
+}
+button {
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    padding-inline: 15px;
+}
+
+.texts h1 {
+    font-size: 50px;
+    max-width: 450px;
+    line-height: 115%;
+    margin-bottom: 25px;
+}
+.texts p {
+    max-width: 500px;
+}
+
+.btn-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 550px;
+}
+.btn-form button.try-it {
+    font-size: 18px;
+    background-color: hsl(248, 32%, 49%);
+    padding-block: 22px;
+    box-shadow: 0 8px 2px 0 hsla(247, 20%, 32%, 0.3);
+}
+.btn-form button.try-it:hover {
+    background-color: hsla(248, 44%, 58%, 0.9);
+}
+.btn-form .form-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.btn-form .form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.btn-form .form-box form div {
+    display: flex;
+    flex-direction: column;
+}
+.btn-form .form-box form input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid hsla(246, 25%, 77%, 0.5);
+    color: hsl(249, 10%, 26%);
+}
+.btn-form .form-box form input.invalido {
+    border: 1px solid hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+.btn-form .form-box form .error-msg {
+    display: none;
+}
+.btn-form .form-box form .error-msg.on {
+    display: block;
+    color: hsl(0, 100%, 74%);
+    font-size: 11px;
+    font-style: italic;
+    align-self: flex-end;
+}
+.btn-form .form-box form .error-msg.on::before {
+    display: inline-block;
+    content: '';
+    background: url(../images/icon-error.svg);
+    width: 24px;
+    height: 24px;
+    position: relative;
+    transform: translate(600%, -155%);
+}
+.btn-form .form-box form button {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-block: 18px;
+    background-color: hsl(154, 59%, 51%);
+    font-weight: 600;
+    box-shadow: inset 0px -3px 2px 1px hsl(154, 64%, 38%);
+    margin-bottom: 18px;
+}
+.btn-form .form-box form button:hover {
+    background-color: hsla(154, 59%, 51%, 0.7);
+}
+
+.btn-form .form-box p {
+    font-size: 12px;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    font-weight: 600
+}
+.btn-form .form-box p a {
+    color: hsl(0, 100%, 74%);
+}
